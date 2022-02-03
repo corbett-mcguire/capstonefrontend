@@ -1,13 +1,46 @@
-capstonefrontend
-Slinging Wiki User stories:
+Sling Wiki
 
-User should be able to access homepage
-User should be able to be able to scroll up and down page without header moving
-User should be able to view stationary menu tab in header
-User should be able to access drop down menu located inside of banner 
-User should be able to view and use search bar located in header
-User should be able to interact with links located in the tabs from the drop down menu
-User should be able to upload/contribute to list of articles/posts
-User should be able to post relevant links with relevant information
-User should be able to prefer (like) posts
-User should be able to sort posts by date/prefered
+This is an informational web app dedicated to the creation, use and history of slings.
+
+Technologies
+
+Version Control
+WSL
+Github
+GitKraken
+
+Development
+IntelliJ
+Spring Boot
+Postman
+PgAdmin
+
+Planning
+Google Docs
+LucidChart
+
+Communication
+Slack
+Zoom
+
+General Approach
+
+Plan
+Design
+Project approval
+Develop
+Refactor
+User Stories
+
+
+User should be able to access homepage and see intuitive menu interface.
+User should be able to scroll up and down the page while maintaining a stationary and accessible header.
+User should be able to view search bar in header.
+User should be able to access search bar to locate internal page posts.
+User should be able to create, update, delete, edit posts.
+
+ERD
+
+
+
+
