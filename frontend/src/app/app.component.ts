@@ -1,10 +1,6 @@
 import {Component} from "@angular/core";
 import {from} from "rxjs";
 
-
-let npximport;
-npximport { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
