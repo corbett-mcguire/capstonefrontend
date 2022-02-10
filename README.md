@@ -29,7 +29,8 @@ General Approach
 -Design
 -Project approval
 -Develop
--refactor
+-Refactor
+
 User Stories
 
 
