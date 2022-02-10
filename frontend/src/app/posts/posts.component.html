@@ -1,9 +1,38 @@
-<h1>Balearic Slings</h1>
+<h1>
+    {{typeName?.name}}
+</h1>
 <div class = "posts-container" *ngFor="let post of posts"> 
+    <div class = "author">
+        Author name:{{post.name}}
+    </div>
     <div class = "title">
-        {{post.title}}
+        Title:{{post.title}}
     </div>
     <div class = "description">
-        {{post.description}}
+        Description: {{post.description}}
     </div>
+    <div>
+        <button>
+            Edit Post
+        </button>
+        <button (click)="deletePost(post.id)">
+            Delete Post
+        </button>
+    </div>
+    
 </div>
+
+<form>
+    <label for="name">
+        Author
+    </label>
+    <input [(ngModel)]="post.name" name="postName" type="text">
+    <label>
+        Title
+    </label>
+    <input [(ngModel)]="post.title" name="postTitle" type="text">
+    <label for="description"> Description</label>
+    <textarea [(ngModel)]="post.description" name="description" id="" cols="30" rows="10"></textarea>
+    <input (click)="createPost()" type="submit">
+</form>
+

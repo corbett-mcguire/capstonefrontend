@@ -2,9 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const httpOptions = {
-  headers: new HttpHeaders({"Content-Type": "application/json"})
-};
+
 
 @Injectable({
   providedIn: 'root'
@@ -15,14 +13,14 @@ export class PostsService {
   getAllPosts(typeId: any){
     return this.http.get(this.url+typeId+"/posts");
   }
-  createPost(post: {title: any;description: any;name: any;}): Observable<any>{
-    return this.http.post(this.url+"/1/posts",{
-      title: post.title,
-      description: post.description,
-      name: post.name
-    },httpOptions);
+  createPost(post: any, typeId: any): Observable<any>{
+    return this.http.post(this.url+typeId+"/posts",post);  
   }
-   public deletePost(post: { id: any; }) {
-     return this.http.delete(this.postUrl + "/"+ post.id);
-   }
+  getOneType(typeId: any){
+    return this.http.get(this.url+typeId);
+  }
+  deletePost(typeId: any, postId: any){
+    return this.http.delete(this.url+typeId+"/posts/"+postId);
+  }
+   
 }
