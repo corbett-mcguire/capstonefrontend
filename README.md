@@ -35,9 +35,7 @@ User Stories
 
 
 -User should be able to access homepage and see intuitive menu interface.
--User should be able to scroll up and down the page while maintaining a stationary and accessible header.
--User should be able to view search bar in header.
--User should be able to access search bar to locate internal page posts.
+
 -User should be able to create, update, delete, edit posts.
 
 ERD
