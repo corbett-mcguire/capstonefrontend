@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path:"types/:id",
     component:PostsComponent 
-    }
+    },
+    {
+      path:"posts/:id",
+      component:PostsComponent 
+      }
 ];
 
 @NgModule({

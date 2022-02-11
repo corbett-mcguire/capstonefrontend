@@ -12,14 +12,28 @@
         Description: {{post.description}}
     </div>
     <div>
-        <button>
+        <button (click)="editPost(post)">
             Edit Post
         </button>
         <button (click)="deletePost(post.id)">
             Delete Post
         </button>
     </div>
-    
+    <div *ngIf="post.edit">
+        <form>
+            <label for="name">
+                Author
+            </label>
+            <input [(ngModel)]="post.name" name="postName" type="text">
+            <label>
+                Title
+            </label>
+            <input [(ngModel)]="post.title" name="postTitle" type="text">
+            <label for="description"> Description</label>
+            <textarea [(ngModel)]="post.description" name="description" id="" cols="30" rows="10"></textarea>
+            <input (click)="saveEditedPost(post)" type="submit" value="Save">
+        </form>
+    </div>
 </div>
 
 <form>

@@ -8,11 +8,13 @@ import { RouterModule } from "@angular/router";
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { EditPostComponent } from './edit-post/edit-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,

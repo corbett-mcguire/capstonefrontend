@@ -22,5 +22,8 @@ export class PostsService {
   deletePost(typeId: any, postId: any){
     return this.http.delete(this.url+typeId+"/posts/"+postId);
   }
+  updatePost(typeId: any, postId: any, postObject: any){
+    return this.http.put(this.url+typeId+"/posts/"+postId, postObject);
+  }
    
 }
